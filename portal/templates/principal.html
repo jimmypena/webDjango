@@ -1,0 +1,8 @@
+{% extends "plantilla.html" %}
+{% block contenido %}
+<article class="tarjeta">
+<h3>Servidor local Django</h3>
+
+<p>Para desarrollo local, Django incluye un servidor web integrado llamado runserver (ejecutado con python manage.py runserver). Para entornos de producción, Django no implementa su propio servidor web definitivo, sino que utiliza servidores de aplicaciones WSGI/ASGI como Gunicorn, uWSGI o Uvicorn, comúnmente combinados con servidores HTTP como Nginx o Apache.</p>
+</article>
+{% endblock contenido %}

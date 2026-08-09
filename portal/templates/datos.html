@@ -1,0 +1,26 @@
+{% extends 'plantilla.html' %}
+
+{% block contenido %}
+  <article class="tarjeta">
+    <h3>Base de Datos</h3>
+    <p>Ecosistema de Python ordenado radialmente.</p>
+  </article>
+
+  <article>
+  <h3>Contenido de la Base de Datos</h3>
+  {% if sw %}
+    <table>
+    {% for s in sw %}
+        <tr>
+            <td>{{s.id}}</td>
+            <td>{{s.nivel}}</td>
+            <td>{{s.nombre}}</td>
+            <td>{{s.define}}</td>
+        </tr>
+    {% endfor %}
+    </table>
+  {% else %}
+    <p>No existe el registro</p>
+  {% endif %}
+</article>
+{% endblock contenido %}
