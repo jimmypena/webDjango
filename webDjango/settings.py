@@ -73,7 +73,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'webDjango.wsgi.application'
+WSGI_APPLICATION = 'webDjango.wsgi.app'
 
 
 # Database
