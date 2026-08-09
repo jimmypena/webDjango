@@ -1,9 +1,10 @@
 {
+  "version": 2,
   "builds": [
     {
       "src": "webDjango/wsgi.py",
       "use": "@vercel/python",
-      "config": { "maxLambdaSize": "15mb", "runtime": "python3.8.10" }
+      "config": { "maxLambdaSize": "15mb", "runtime": "python3.13" }
     }
   ],
   "routes": [
